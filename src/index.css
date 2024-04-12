@@ -1,0 +1,83 @@
+:root {
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+palette {
+    color: #ffffff;
+    color: #e5e5e5;
+    color: #fca311;
+    color: #14213d;
+    color: #000000;
+}
+
+.main {
+    max-width: 40vw;
+    background-color: #14213d;
+    min-height: 80vh;
+    margin: 10vh auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+
+}
+
+#notes-img {
+    margin-top: 1rem;
+    width: 10vw;
+}
+
+#input-field {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #e5e5e5;
+    color: #14213d;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#add-button {
+    margin-top: 0.5rem;
+    background-color: #fca311;
+    width: 100%;
+    color: #e5e5e5;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    font-weight: 600;
+    text-shadow: #14213d 0 0 1px;
+}
+
+#note-list {
+    /* To remove bullet and its space */
+    list-style-type: none;
+    margin: 10px 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+}
+
+.note {
+    text-decoration: none;
+    background-color: #e5e5e5;
+    color: #14213d;
+    padding: 2px 5px;
+    border-radius: 5px;
+    line-height: 1.5rem;
+    /* To resize flex items */
+    flex-grow: 1;
+    text-wrap: wrap;
+    text-align: center;
+}
