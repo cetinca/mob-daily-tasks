@@ -1,85 +1,87 @@
 :root {
-    box-sizing: border-box;
-    font-family: "Rubik", sans-serif;
-    /* use with caution, if user need to select text */
-    user-select: none;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  /* use with caution, if user need to select text */
+  user-select: none;
 }
 
 palette {
-    color: #ffffff;
-    color: #e5e5e5;
-    color: #fca311;
-    color: #14213d;
-    color: #000000;
+  color: #ffffff;
+  color: #e5e5e5;
+  color: #fca311;
+  color: #14213d;
+  color: #000000;
 }
 
 .main {
-    max-width: 40vw;
-    background-color: #14213d;
-    min-height: 80vh;
-    margin: 10vh auto;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 480px;
+  background-color: #14213d;
+  min-height: 90vh;
+  margin: 1vh auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .notes-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
 
 }
 
 #notes-img {
-    margin-top: 1rem;
-    width: 10vw;
+  margin-top: 2rem;
+  width: 10vw;
 }
 
 #input-field {
-    box-sizing: border-box;
-    width: 100%;
-    margin-top: 1rem;
-    background-color: #e5e5e5;
-    color: #14213d;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 2rem;
+  background-color: #e5e5e5;
+  color: #14213d;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1.5rem;
 }
 
 #add-button {
-    margin-top: 0.5rem;
-    background-color: #fca311;
-    width: 100%;
-    color: #e5e5e5;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 15px;
-    font-weight: 600;
-    text-shadow: #14213d 0 0 1px;
+  margin-top: 2rem;
+  background-color: #fca311;
+  width: 100%;
+  color: #e5e5e5;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-weight: 600;
+  text-shadow: #14213d 0 0 1px;
+  font-size: 1.5rem;
 }
 
 #note-list {
-    /* To remove bullet and its space */
-    list-style-type: none;
-    margin: 10px 0; 
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px 10px;
+  /* To remove bullet and its space */
+  list-style-type: none;
+  margin: 2rem 0; 
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px 20px;
 }
 
 .note {
-    text-decoration: none;
-    background-color: #e5e5e5;
-    color: #14213d;
-    padding: 2px 5px;
-    border-radius: 5px;
-    line-height: 1.5rem;
-    /* To resize flex items */
-    flex-grow: 1;
-    text-wrap: wrap;
-    text-align: center;
+  text-decoration: none;
+  background-color: #e5e5e5;
+  color: #14213d;
+  padding: 10px 10px;
+  border-radius: 5px;
+  /* To resize flex items */
+  flex-grow: 1;
+  text-wrap: wrap;
+  text-align: center;
+  font-size: 1.5rem;
 }
