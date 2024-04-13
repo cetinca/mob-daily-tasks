@@ -30,6 +30,7 @@ function addNote() {
     setNotes(notList)
     renderNotes(notList)
     inputEl.value = ""
+    inputEl.focus()
 }
 
 
@@ -49,7 +50,6 @@ inputEl.addEventListener("keypress", (event) => {
       })
 
 function renderNotes(notes) {
-    inputEl.focus()
     notListEl.innerHTML = ""
     notes.map(note => {
         const noteLi = document.createElement("li")
